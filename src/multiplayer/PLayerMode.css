@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 3%;
+}
+.Navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.score{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.coins{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.score img{
+    width: 150.85px;
+    height: 136.84px;
+    border-radius: 50%;
+}
+.coins button{
+    width: 300%;
+    height: 69.69px;
+    border-radius: 12px;
+    background: linear-gradient(91.34deg, #980000 -17.49%, #FFD976 140.34%);
+    color: white;
+    
+}
+#timer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    margin-top: 1rem;
+}

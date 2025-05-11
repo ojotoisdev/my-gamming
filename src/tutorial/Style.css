@@ -1,0 +1,299 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    margin: 2%;
+  }
+  
+  /* Navbar stays in row always */
+  .Navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    overflow: hidden;
+  }
+  
+  /* Ensure content inside Navbar scales on mobile */
+  .Navbar > * {
+    flex-shrink: 1;
+    min-width: 0;
+  }
+  
+  /* Group block */
+  .group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/src/assets/Star 26.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 8.87%;
+    height: 229.22px;
+  }
+  
+  .group img {
+    width: 106.63px;
+    height: 45.34px;
+  }
+  
+  .plus {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .plus .group {
+    display: block;
+    width: 60%;
+    height: auto;
+  }
+  
+  .plus .hon {
+    position: absolute;
+    top: 3px;
+    left: 70%;
+    transform: translateX(-50%);
+    width: 15.1%;
+    height: 55.81%;
+    color: white;
+    padding: 4px;
+  }
+  
+  .group span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .span h2 {
+    font-size: 15.55px;
+    color: white;
+  }
+  
+  .span p {
+    font-size: 27.73px;
+    color: white;
+  }
+  
+  .img img {
+    width: 110.11px;
+    height: 99.88px;
+    border-radius: 50%;
+    margin-right: 70px;
+  }
+  
+  #btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 68px;
+    text-align: center;
+  }
+  
+  #btn p {
+    font-size: 250%;
+    color: #269A2A;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .card-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    flex-wrap: wrap;
+  }
+  
+  .how-to-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 15%;
+    min-width: 160px;
+    margin-top: 1%;
+    height: 415px;
+    background: linear-gradient(91.34deg, #980000 -17.49%, #FFD976 140.34%);
+  }
+  
+  .how-to-play p {
+    font-size: 40px;
+    color: white;
+  }
+  
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .btn button {
+    width: 30vh;
+    height: 56px;
+    padding: 10px;
+    border-radius: 32px;
+    font-size: 32px;
+    border: 4px solid transparent;
+    background:
+      linear-gradient(#269A2A, #269A2A) padding-box,
+      linear-gradient(91.34deg, #980000 -17.49%, #FFD976 140.34%) border-box;
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    color: wheat;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+  
+  /* --------------------------------- */
+  /* 🚀 RESPONSIVE FIXES ONLY BELOW 🔽 */
+  /* --------------------------------- */
+  
+  @media (max-width: 768px) {
+    .Navbar {
+      padding: 0 10px;
+    }
+  
+    .Navbar > * {
+      max-width: 33%;
+    }
+  
+    .group img {
+      width: 80px;
+      height: auto;
+    }
+  
+    .main {
+      width: 120px;
+      height: 180px;
+    }
+  
+    .span h2 {
+      font-size: 12px;
+    }
+  
+    .span p {
+      font-size: 20px;
+    }
+  
+    .img img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .how-to-play {
+      width: 90%;
+      padding: 20px;
+      height: auto;
+    }
+  
+    .how-to-play p {
+      font-size: 24px;
+    }
+  
+    .btn {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .btn button {
+      width: 90%;
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Navbar > * {
+      max-width: 100px;
+      margin-bottom: 2rem;
+    }
+  
+    .group img {
+      width: 60px;
+    }
+  
+    .main {
+      width: 100px;
+      height: 150px;
+    }
+    #btn{
+        margin-bottom: 5%;
+    }
+    #btn p{
+        font-size: 140%;
+        margin-top: 10%;
+        
+    }
+    .how-to-play{
+        height: 150px;
+    }
+  
+    .span h2 {
+      font-size: 10px;
+    }
+  
+    .span p {
+      font-size: 16px;
+    }
+  
+    .img img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .btn button {
+      font-size: 20px;
+      min-width: 300px;
+    }
+    .main{
+        height: 125px;
+        
+    }
+    .down{
+        width: 220%;
+        height: 100%;
+    }
+    .flip{
+        display: flex;
+        flex-direction: column;
+        font-size: xx-small;
+        text-align: center;
+        margin-right: 50px;
+    }
+  }
+  
