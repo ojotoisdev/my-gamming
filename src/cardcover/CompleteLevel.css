@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Happy+Monkey&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+ @import url('https://fonts.cdnfonts.com/css/athletic');
+
+                
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background-color: white;
+    
+    
+    background-size: cover;      /* Cover the entire screen */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    
+}
+.Navbar{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    justify-content: space-between;
+}
+.nav-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo{
+    flex: 2;
+    text-align: center;
+    position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  text-align: center;
+  white-space: nowrap;
+}
+.flip p{
+    font-family: 'Happy Monkey', cursive;
+}
+.logo h1{
+    font-size: 40px;
+    color: #221818;
+    font-family: 'Rajdhani', sans-serif;
+}
+.score span{
+    font-family: 'Happy Monkey', cursive;
+}
+.score{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.score button{
+    width: 120px;
+    height: 69.89px;
+    border-radius: 12px;
+    opacity: 80%;
+    color: white;
+    border: none;
+    background: linear-gradient(91.34deg, #980000 -17.49%, #FFD976 140.34%);
+    
+}
+.face{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.face .image{
+    width: 110.11px;
+    height: 99.88px;
+    border-radius: 50%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    
+    
+}
+.game-level{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   
+   width: 920px;
+   height: 591.431640625px;
+  min-height: 566px; /* Ensures enough space but allows growth */
+ background-image: url('/src/assets/Group 60.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+.star-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.star-1 .image{
+    width: 320px;
+    height: 147.85px;
+}
+.star-1 frame{
+    width: 180px;
+    height: 229.9px;
+    margin-top: 0%;
+    
+}
+.reward{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.reward img{
+    width: 102.17px;
+    height: 46.58px;
+}
+.reward h1{
+    width: 100px;
+    height: 29px;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0%;
+
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 10%;
+}
+.btn button{
+    width: 240px;
+    height: 56px;
+    border-radius: 32px;
+    padding: 10px;
+    
+    border-radius: 32px;
+    font-size: 32px;
+    border: 4px solid transparent;
+    background:
+      linear-gradient(#269A2A, #269A2A) padding-box,
+      linear-gradient(91.34deg, #980000 -17.49%, #FFD976 140.34%) border-box;
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    color: wheat;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+.comment{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.comment p strong{
+    font-size: 40px;
+}
+.comment p{
+    font-size: 24px;
+    font-family: 'Athletic', sans-serif;
+                                                
+}
+.down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.down img{
+    width: 1942.9959716796875px;
+    height: 165px;
+}

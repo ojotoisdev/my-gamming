@@ -1,12 +1,16 @@
 
 
 
-import Learn from './tutorial/Learn'
+
+
+import TimeUp from './cardcover/TimeUp'
+
 
 const App = () => {
   return (
     <div>
-      <Learn/>
+      
+      <TimeUp/>
       
     </div>
   )
