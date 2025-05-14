@@ -1,0 +1,200 @@
+/* Base Styles (All Screens) */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+/* Navbar */
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+/* Score Section */
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.score button {
+  margin-top: 1rem;
+  width: 224%;
+  max-width: 220px;
+  height: 70px;
+  border-radius: 15%;
+  border: none;
+  background: linear-gradient(91.34deg, #980000 -17.49%, #FFD976 140.34%);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Container */
+.container {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+/* Navbar Section */
+.nav-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+/* Face Logo */
+.face img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  max-width: 100%;
+}
+
+/* Main Section */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6%;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 957px;
+  height: 566px;
+  background-image: url('../assets/icon.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Text */
+.find {
+  text-align: center;
+}
+
+.find p {
+  margin-top: 40px;
+  font-size: 200%;
+  font-weight: 400;
+}
+
+/* Footer or bottom section */
+.down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* =========================================
+   Responsive Styles
+========================================= */
+
+/* ---------- Tablet (768px–1024px) ---------- */
+@media (max-width: 1024px) {
+  .main {
+    width: 90%;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
+
+  .score button {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .nav-section {
+    gap: 30px;
+    
+  }
+  
+  .face img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .find p {
+    font-size: 150%;
+  }
+  .down {
+    
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+}
+
+/* ---------- Mobile (Below 768px) ---------- */
+@media (max-width: 767px) {
+  .Navbar {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .nav-section {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .find img{
+    min-width: 10%;
+    min-height: 50%;
+  }
+
+  .main {
+    display: flex;
+    width: 130vh;
+    height: auto;
+    flex-wrap: wrap;
+    
+  }
+  .find frame{
+    width: 100%;
+  }
+
+  .find p {
+    font-size: 130%;
+  }
+
+  .score button {
+    font-size: 0.9rem;
+    height: 50px;
+    width: 100%;
+  }
+
+  .face img {
+    width: 60px;
+    height: 60px;
+  }
+  .down {
+    min-width: 120%;
+    height: auto;
+  }
+
+  /* Hide logo on mobile */
+  .logo span,
+  .logo img {
+    display: none;
+  }
+}

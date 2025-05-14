@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, auto); /* Desktop default: 3 columns */
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    padding: 0 20px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Tablet view (<=1024px): 2 columns */
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(2, auto);
+        gap: 40px;
+    }
+}
+
+/* Mobile view (<=600px): 1 column */
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}

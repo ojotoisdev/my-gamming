@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+
+.container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Tablets (<=1024px): 3 columns */
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+}
+
+/* Small Tablets (<=768px): still 3 columns */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+    }
+}
+
+/* Mobile (<=600px): 2 columns */
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* Very Small Devices (<=400px): 2 columns */
+@media (max-width: 400px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}

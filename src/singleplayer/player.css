@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    margin: 1%;
+  }
+  
+  /* Navbar stays in row always */
+  .Navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    overflow: hidden;
+  }
+  
+  /* Ensure content inside Navbar scales on mobile */
+  .Navbar > * {
+    flex-shrink: 1;
+    min-width: 0;
+  }
+  
+  /* Group block */
+  .group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/src/assets/Star 26.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 157.87px;
+    height: 202.22px;
+  }
+  
+  .group img {
+    width: 106.63px;
+    height: 45.34px;
+  }
+  
+  .plus {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .plus .group {
+    display: block;
+    width: 60%;
+    height: auto;
+  }
+  
+  .plus .hon {
+    position: absolute;
+    top: 3px;
+    left: 70%;
+    transform: translateX(-50%);
+    width: 15.1%;
+    height: 55.81%;
+    color: white;
+    padding: 4px;
+  }
+  
+  .group span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .span h2 {
+    font-size: 15.55px;
+    color: white;
+  }
+  
+  .span p {
+    font-size: 27.73px;
+    color: white;
+  }
+  
+  .img img {
+    width: 110.11px;
+    height: 99.88px;
+    border-radius: 50%;
+    margin-right: 70px;
+  }
+  .container-level{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    
+    
+  }
+.flip img{
+  width: 101px;
+  height: 129px;
+}
+.game-level{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   margin-top: 5%;
+   width: 69vh;
+   height: 36vh;
+  min-height: 566px; /* Ensures enough space but allows growth */
+  background-image: url('/src/assets/outer.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+.flip{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.flip img{
+    text-align: center;
+    width: 101px;
+    height: 129px;
+     /* Make images responsive */
+    height: auto;
+    object-fit: cover;
+    max-width: 200px;
+}
+.down-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.down-image img{
+  width: 194.43vh;
+  height: auto;
+}
+
+/*@media (max-width: 1024px) {
+  .Navbar {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .group img,
+  .img img {
+    width: 80px;
+  }
+
+  .main {
+    width: 120px;
+    height: 160px;
+  }
+
+  .flip {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 100px;
+    height: 140px;
+  }
+
+  .group span h2 {
+    font-size: 0.9rem;
+  }
+
+  .group span p {
+    font-size: 1.2rem;
+  }
+
+  .flip {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30%;
+  }
+
+  .flip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .img img {
+    width: 70px;
+    margin-right: 0;
+  }
+
+  .main {
+    width: 80px;
+    height: 100px;
+  }
+  .game-level{
+    width: 150%;
+    height: 1000%;
+  }
+}*/
