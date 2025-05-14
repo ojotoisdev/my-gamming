@@ -1,16 +1,16 @@
 
 
+import ThreeLevel from './cardcover/ThreeLevel'
 
 
-
-import TimeUp from './cardcover/TimeUp'
 
 
 const App = () => {
   return (
     <div>
+
       
-      <TimeUp/>
+      <ThreeLevel/>
       
     </div>
   )
